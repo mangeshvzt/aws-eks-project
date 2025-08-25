@@ -1,0 +1,14 @@
+---
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: man-eks
+  region: AWS_REGION
+  tags:
+    project: sample-project
+
+nodeGroups:
+  - name: worker-node
+    instanceType: m5.large
+    desiredCapacity: 3
