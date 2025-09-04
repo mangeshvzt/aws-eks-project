@@ -1,9 +1,9 @@
 pipeline {
     agent {
-        label 'any'
-    }
-    options {
-        customWorkspace '/home/zignuts/monile-app'
+        node {
+            label 'any'
+            customWorkspace '/home/zignuts/monile-app'
+        }
     }
 
     stages {
