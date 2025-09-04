@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Run Test Script') {
             steps {
-                sh '/home/zignuts/tmp/test.sh'
+                sh 'test.sh'
             }
         }
     }
