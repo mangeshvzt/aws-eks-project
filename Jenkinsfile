@@ -1,7 +1,7 @@
 pipeline {
     agent {
         node {
-            label 'ubuntu'
+            label ''
             customWorkspace '/home/zignuts/monile-app'
         }
     }
