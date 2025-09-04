@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh '/Users/divyesh/Downloads/auto-build-flutter.sh'
+                sh 'bash /Users/divyesh/Downloads/auto-build-flutter.sh'
             }
         }
     }
