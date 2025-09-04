@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'bash /home/zignuts/jenkins-test/test.sh'
+                sh '/Users/divyesh/Downloads/test.sh'
             }
         }
     }
