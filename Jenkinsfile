@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Run Test Script') {
             steps {
-                sh '/Users/divyesh/Downloads/test.sh'
+                sh 'sudo /Users/divyesh/Downloads/test.sh'
             }
         }
     }
