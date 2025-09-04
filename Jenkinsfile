@@ -1,10 +1,5 @@
 pipeline {
-    agent {
-        node {
-            label ''
-            customWorkspace '/home/zignuts/monile-app'
-        }
-    }
+    agent any
 
     stages {
         stage('Test') {
