@@ -1,13 +1,19 @@
 pipeline {
-    agent any
+    agent {
+        label 'any'
+    }
+    options {
+        customWorkspace '/home/zignuts/monile-app'
+    }
 
     stages {
-        stage('Run Test Script') {
+        stage('Test') {
             steps {
                 sh 'bash /home/zignuts/jenkins-test/test.sh'
             }
         }
     }
+}
 
     post {
         always {
